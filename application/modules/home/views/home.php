@@ -93,7 +93,7 @@
               <i class="fa fa-circle fa-stack-2x text-primary"></i>
               <i class="fa fa-code fa-stack-1x fa-inverse"></i>
             </span>
-            <h4 class="service-heading">Robust Development</h4>
+            <h4 class="service-heading">Web Development</h4>
             <p class="text-muted">Development of web applications with smooth functioning to facilitate your business reach the apex.</p>
           </div>
           <div class="col-md-4">
@@ -101,7 +101,7 @@
               <i class="fa fa-circle fa-stack-2x text-primary"></i>
               <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
             </span>
-            <h4 class="service-heading">Responsive Design</h4>
+            <h4 class="service-heading">Web Design</h4>
             <p class="text-muted">Use of cutting edge technology and responsive designs to give unique and effective finish to your needs</p>
           </div>
           <div class="col-md-4">

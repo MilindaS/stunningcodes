@@ -9807,3 +9807,75 @@ DEBUG - 2017-09-04 13:56:36 --> Model Class Initialized
 DEBUG - 2017-09-04 13:56:36 --> File loaded: application/modules/home/views/home.php
 DEBUG - 2017-09-04 13:56:36 --> Final output sent to browser
 DEBUG - 2017-09-04 13:56:36 --> Total execution time: 0.0098
+ERROR - 2017-09-04 14:15:37 --> Severity: Notice  --> Only variable references should be returned by reference /home/milinda/Projects/stunningcodes/system/core/Common.php 257
+DEBUG - 2017-09-04 14:15:37 --> Config Class Initialized
+DEBUG - 2017-09-04 14:15:37 --> Hooks Class Initialized
+DEBUG - 2017-09-04 14:15:37 --> Utf8 Class Initialized
+DEBUG - 2017-09-04 14:15:37 --> UTF-8 Support Enabled
+DEBUG - 2017-09-04 14:15:37 --> URI Class Initialized
+DEBUG - 2017-09-04 14:15:37 --> Router Class Initialized
+DEBUG - 2017-09-04 14:15:37 --> No URI present. Default controller set.
+DEBUG - 2017-09-04 14:15:37 --> Output Class Initialized
+DEBUG - 2017-09-04 14:15:37 --> Security Class Initialized
+DEBUG - 2017-09-04 14:15:37 --> Input Class Initialized
+DEBUG - 2017-09-04 14:15:37 --> Global POST and COOKIE data sanitized
+DEBUG - 2017-09-04 14:15:37 --> Language Class Initialized
+DEBUG - 2017-09-04 14:15:37 --> Language Class Initialized
+DEBUG - 2017-09-04 14:15:37 --> Config Class Initialized
+DEBUG - 2017-09-04 14:15:37 --> Loader Class Initialized
+DEBUG - 2017-09-04 14:15:37 --> Config file loaded: application/config/cimongo.php
+DEBUG - 2017-09-04 14:15:37 --> Helper loaded: url_helper
+DEBUG - 2017-09-04 14:15:37 --> Helper loaded: form_helper
+DEBUG - 2017-09-04 14:15:37 --> *** Hello from MY_Session ***
+DEBUG - 2017-09-04 14:15:37 --> Session Class Initialized
+DEBUG - 2017-09-04 14:15:37 --> Helper loaded: string_helper
+DEBUG - 2017-09-04 14:15:37 --> Encrypt Class Initialized
+DEBUG - 2017-09-04 14:15:37 --> Session routines successfully run
+DEBUG - 2017-09-04 14:15:37 --> Controller Class Initialized
+DEBUG - 2017-09-04 14:15:37 --> Home MX_Controller Initialized
+DEBUG - 2017-09-04 14:15:37 --> Model Class Initialized
+DEBUG - 2017-09-04 14:15:37 --> File loaded: application/modules/home/models/mdl_home.php
+DEBUG - 2017-09-04 14:15:37 --> Model Class Initialized
+DEBUG - 2017-09-04 14:15:37 --> File loaded: application/controllers/../modules/common/controllers/common.php
+DEBUG - 2017-09-04 14:15:37 --> Common MX_Controller Initialized
+DEBUG - 2017-09-04 14:15:37 --> File loaded: application/modules/common/models/mdl_rename.php
+DEBUG - 2017-09-04 14:15:37 --> Model Class Initialized
+DEBUG - 2017-09-04 14:15:37 --> File loaded: application/modules/home/views/home.php
+DEBUG - 2017-09-04 14:15:37 --> Final output sent to browser
+DEBUG - 2017-09-04 14:15:37 --> Total execution time: 0.0105
+ERROR - 2017-09-04 14:16:12 --> Severity: Notice  --> Only variable references should be returned by reference /home/milinda/Projects/stunningcodes/system/core/Common.php 257
+DEBUG - 2017-09-04 14:16:12 --> Config Class Initialized
+DEBUG - 2017-09-04 14:16:12 --> Hooks Class Initialized
+DEBUG - 2017-09-04 14:16:12 --> Utf8 Class Initialized
+DEBUG - 2017-09-04 14:16:12 --> UTF-8 Support Enabled
+DEBUG - 2017-09-04 14:16:12 --> URI Class Initialized
+DEBUG - 2017-09-04 14:16:12 --> Router Class Initialized
+DEBUG - 2017-09-04 14:16:12 --> No URI present. Default controller set.
+DEBUG - 2017-09-04 14:16:12 --> Output Class Initialized
+DEBUG - 2017-09-04 14:16:12 --> Security Class Initialized
+DEBUG - 2017-09-04 14:16:12 --> Input Class Initialized
+DEBUG - 2017-09-04 14:16:12 --> Global POST and COOKIE data sanitized
+DEBUG - 2017-09-04 14:16:12 --> Language Class Initialized
+DEBUG - 2017-09-04 14:16:12 --> Language Class Initialized
+DEBUG - 2017-09-04 14:16:12 --> Config Class Initialized
+DEBUG - 2017-09-04 14:16:12 --> Loader Class Initialized
+DEBUG - 2017-09-04 14:16:12 --> Config file loaded: application/config/cimongo.php
+DEBUG - 2017-09-04 14:16:12 --> Helper loaded: url_helper
+DEBUG - 2017-09-04 14:16:12 --> Helper loaded: form_helper
+DEBUG - 2017-09-04 14:16:12 --> *** Hello from MY_Session ***
+DEBUG - 2017-09-04 14:16:12 --> Session Class Initialized
+DEBUG - 2017-09-04 14:16:12 --> Helper loaded: string_helper
+DEBUG - 2017-09-04 14:16:12 --> Encrypt Class Initialized
+DEBUG - 2017-09-04 14:16:12 --> Session routines successfully run
+DEBUG - 2017-09-04 14:16:12 --> Controller Class Initialized
+DEBUG - 2017-09-04 14:16:12 --> Home MX_Controller Initialized
+DEBUG - 2017-09-04 14:16:12 --> Model Class Initialized
+DEBUG - 2017-09-04 14:16:12 --> File loaded: application/modules/home/models/mdl_home.php
+DEBUG - 2017-09-04 14:16:12 --> Model Class Initialized
+DEBUG - 2017-09-04 14:16:12 --> File loaded: application/controllers/../modules/common/controllers/common.php
+DEBUG - 2017-09-04 14:16:12 --> Common MX_Controller Initialized
+DEBUG - 2017-09-04 14:16:12 --> File loaded: application/modules/common/models/mdl_rename.php
+DEBUG - 2017-09-04 14:16:12 --> Model Class Initialized
+DEBUG - 2017-09-04 14:16:12 --> File loaded: application/modules/home/views/home.php
+DEBUG - 2017-09-04 14:16:12 --> Final output sent to browser
+DEBUG - 2017-09-04 14:16:12 --> Total execution time: 0.0103
