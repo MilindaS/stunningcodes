@@ -1,0 +1,1 @@
+rsync -avz --exclude-from '/home/milinda/Projects/stunningcodes/stunningcodes/exclude-list.txt' /home/milinda/Projects/stunningcodes/stunningcodes/ root@104.236.67.123:/var/www/stunningcodes

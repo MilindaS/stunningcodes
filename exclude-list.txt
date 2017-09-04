@@ -1,0 +1,10 @@
+application/config
+application/logs
+pubilc/node_modules
+system
+index.php
+xs
+.git
+.htaccess
+.gitignore
+

@@ -1,0 +1,4 @@
+bower update(!important to check js libraries)
+grunt
+grunt uglify
+grunt cssmin

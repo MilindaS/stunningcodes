@@ -1,0 +1,118 @@
+.body-bg{
+	/*overflow: hidden;*/
+	background-color: #373A3F;
+	  background-image: none;
+	background-repeat: repeat-x;
+}
+
+.site-logo-background,.top-fadeup-back{
+	display: none;
+}
+.signin-container,.signup-container{
+	background: none;
+	margin-top: 50px;
+}
+.arrow-right {
+	width: 0; 
+	height: 0; 
+	margin-left: 10px;
+	border-top: 10px solid transparent;
+	border-bottom:10px solid transparent;
+	border-left: 10px solid #12CDFF;
+}
+.signup-link{
+	color: #7B818C;text-shadow:0px 0px 1px black;
+	position: absolute;top:110px;
+	left:100px;
+}
+input{
+    -webkit-box-shadow: 0 0 0px 1000px #1C1E21 inset;
+    box-shadow: 0 0 0px 1000px #1C1E21 inset;
+ 	width: 300px;
+ 	padding: 10px 20px;
+ 	font-size: 16px;
+    border: none;border-radius:2px;
+    color: #D8D9DD !important;
+    border-bottom:1px solid #5F646D; 
+}
+.lgn-nw-btn{
+	font-weight: bold;font-size: 20px;
+	width:50px;
+	height:100px;border-top-right-radius: 100px;border-bottom-right-radius: 100px;
+	background: #1C1E21;border:none;position: absolute;top:0px;right:20px;
+	border-bottom:1px solid #51575F; box-shadow: 0px 0px 1px 0px black;
+}
+.site-logo{
+	margin-top: 10% ;
+	font-size: 40px;
+
+	color: #FFF;
+	font-family:'MavenPro-Regular';
+}
+.ghosttype{
+	background:none;border:none;color:#52B5CF;outline:none;
+	position: absolute;top:-100;
+	/*width:0px;*/
+}
+
+
+.line-init{
+	margin-right: 4px;
+}
+
+.blinking-cursor {
+  font-weight: 100;
+  font-size: 30px;
+  color:#52B5CF;
+  font-weight: bold;
+  -webkit-animation: 1s blink step-end infinite;
+  -moz-animation: 1s blink step-end infinite;
+  -ms-animation: 1s blink step-end infinite;
+  -o-animation: 1s blink step-end infinite;
+  animation: 1s blink step-end infinite;
+}
+
+@keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: #52B5CF;
+  }
+}
+
+@-moz-keyframes blink {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: #52B5CF;
+  }
+}
+
+@-webkit-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: #52B5CF;
+  }
+}
+
+@-ms-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: #52B5CF;
+  }
+}
+
+@-o-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: #52B5CF;
+  }
+}

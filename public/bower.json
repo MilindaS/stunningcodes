@@ -1,0 +1,33 @@
+{
+  "name": "StunningCodes",
+  "version": "0.0.1",
+  "homepage": "http://www.stunningcodes.com",
+  "authors": [
+    "Milinda <rockmakas@gmail.com>"
+  ],
+  "description": "Stunning Codes",
+  "moduleType": [
+    "node"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "vendor",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": ">=3.2.0",
+    "ionicons": ">=2.0.0",
+    "seen": "git@github.com:themadcreator/seen.git",
+    "ascensor": "git@github.com:kirkas/Ascensor.js.git",
+    "scrollup": ">=2.0.0",
+    "jquery.transit": "~0.9.12",
+    "FitText.js": "https://github.com/davatron5000/FitText.js.git#~1.2.0",
+    "textillate": "https://github.com/jschr/textillate.git#~0.4.0",
+    "perfect-scrollbar": "https://github.com/noraesae/perfect-scrollbar.git#~0.6.2"
+  }
+}

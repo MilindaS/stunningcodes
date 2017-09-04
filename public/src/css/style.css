@@ -1,0 +1,9 @@
+.body-background{
+	background: #121B21;
+}
+.circle-main{
+	width: 100px;
+	height:100px;
+	float: left;
+	background-image: url('../images/ringWheel.png');
+}

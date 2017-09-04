@@ -1,0 +1,11 @@
+/node_modules/
+*.DS_Store
+.ftppass
+/components/
+/deploy/
+/.sass-cache/
+/.grunt/
+/deploy/
+*.log
+Icon^M^M
+Icon

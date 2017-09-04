@@ -1,0 +1,13 @@
+{
+  "name": "seen",
+  "homepage": "https://github.com/themadcreator/seen",
+  "_release": "1378b3deb7",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "1378b3deb7bf1bba9ea90ef38a6ddc33b286bb10"
+  },
+  "_source": "git@github.com:themadcreator/seen.git",
+  "_target": "*",
+  "_originalSource": "git@github.com:themadcreator/seen.git"
+}

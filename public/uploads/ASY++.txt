@@ -1,0 +1,81 @@
+select 
+g.key_dec as DECLARENT ,
+g.sad_consignee as IM_TIN,
+ g.key_year as IM_YEAR,  
+g.key_cuo as OFFICE,
+g.sad_reg_serial as SER,
+g.sad_reg_nber as REG_NO, 
+g.sad_reg_date as REG_DATE, 
+g.sad_asmt_date AS ASMT_DATE, 
+g.sad_rcpt_date as RCPT_DATE,  
+g.SAD_TYP_DEC as DTYPE,  
+g.SAD_TRSP_IDDEPAR ,
+g.SAD_CTY_EXPCOD,
+g.sad_top_cod as  MOP,
+i.SADITM_CTY_ORIGCOD,
+i.itm_nber,
+i.saditm_hs_cod,
+ h.TAR_DSC, 
+ (i.SADITM_GOODS_DESC1||i.SADITM_GOODS_DESC2|| i.SADITM_GOODS_DESC3) as DESCRIPTION,   
+i.saditm_extd_proc as CPC, 
+i.saditm_nat_proc as NPC, 
+i.saditm_supp_units as S_Units, 
+i.SADITM_GROSS_MASS as G_MASS, 
+i.saditm_net_mass as N_MASS ,	
+h.UOM_COD1 as UOM, 
+i.saditm_stat_val as CIF_VALUE,
+             SUM(CASE  WHEN t.SADITM_TAX_CODE ='CID'  and SADITM_TAX_MOP = '1' THEN     t.SADITM_TAX_AMOUNT ELSE 0 END) CID,  
+            SUM(CASE  WHEN t.SADITM_TAX_CODE = 'EIC'   and SADITM_TAX_MOP = '1' THEN    t.SADITM_TAX_AMOUNT ELSE 0 END) EIC,                     
+            SUM(CASE  WHEN t.SADITM_TAX_CODE ='PAL'  and SADITM_TAX_MOP = '1' THEN       t.SADITM_TAX_AMOUNT ELSE 0 END)PAL,                    
+            SUM(CASE  WHEN t.SADITM_TAX_CODE ='RDL'   and SADITM_TAX_MOP = '1' THEN      t.SADITM_TAX_AMOUNT ELSE 0 END) RDL,                    
+            SUM(CASE   WHEN  t.SADITM_TAX_CODE ='SCL'   and SADITM_TAX_MOP = '1' THEN       t.SADITM_TAX_AMOUNT ELSE 0 END)  SCL,                    
+            SUM(CASE   WHEN  t.SADITM_TAX_CODE ='SRL'  and SADITM_TAX_MOP = '1' THEN          t.SADITM_TAX_AMOUNT ELSE 0 END) SRL,                    
+            SUM(CASE   WHEN  t.SADITM_TAX_CODE ='SUR'   and SADITM_TAX_MOP = '1' THEN          t.SADITM_TAX_AMOUNT ELSE 0 END)  SUR,                    
+            SUM(CASE   WHEN  t.SADITM_TAX_CODE ='VAT'    and SADITM_TAX_MOP = '1' THEN        t.SADITM_TAX_AMOUNT ELSE 0 END)  VAT, 
+            SUM(CASE  WHEN  t.SADITM_TAX_CODE ='NBT'  and SADITM_TAX_MOP = '1' THEN           t.SADITM_TAX_AMOUNT ELSE 0 END)  NBT,                    
+            SUM(CASE  WHEN  t.SADITM_TAX_CODE ='XID'   and SADITM_TAX_MOP = '1' THEN           t.SADITM_TAX_AMOUNT ELSE 0 END)  XID from
+ sad_gen g, sad_itm i
+ LEFT OUTER JOIN  SAD_Tax t ON i.key_year=t.KEY_YEAR  and  i.key_cuo = t.key_cuo  and i.key_dec =t.key_dec and i.key_nber=t.key_nber and i.itm_nber=t.itm_nber and t.SAD_NUM=0
+LEFT OUTER JOIN   UNTARTAB h ON h.hs6_cod || h.tar_pr1 = i.saditm_hs_cod
+ where 
+ i.sad_num=0 and
+g.key_year  = i.key_year and
+g.key_cuo  = i.key_cuo and
+g.key_dec  = i.key_dec and
+g.key_nber = i.key_nber and
+g.sad_num=0 and
+g.lst_ope != 'D'  and
+g.sad_flw='1'and 
+g.sad_reg_date >= '01-jan-2013' and
+g.sad_reg_date <= '31-DEC-2015' and 
+((g.sad_reg_date between h.EEA_DOV and h.EEA_EOV) or   (g.sad_reg_date > h.EEA_DOV and   h.EEA_EOV is null )) and  
+h.lst_ope != 'D' and 
+h.hs6_cod || h.tar_pr1 = i.saditm_hs_cod and
+--i.saditm_hs_cod like '78%'
+g.sad_consignee like '104005330%'
+group by 
+g.key_dec ,
+g.sad_consignee, 
+g.key_year,
+g.key_cuo, 
+g.sad_reg_serial,
+g.sad_reg_nber, 
+g.sad_reg_date, 
+g.sad_asmt_date, 
+g.sad_rcpt_date, 
+g.SAD_TYP_DEC,
+g.SAD_TRSP_IDDEPAR,  
+g.SAD_CTY_EXPCOD,
+g.sad_top_cod ,
+i.SADITM_CTY_ORIGCOD,
+i.itm_nber,
+i.saditm_hs_cod, 
+h.TAR_DSC,
+ (i.SADITM_GOODS_DESC1||i.SADITM_GOODS_DESC2||i.SADITM_GOODS_DESC3),   
+ i.saditm_extd_proc, 
+ i.saditm_nat_proc, 
+ i.saditm_supp_units, 
+ i.SADITM_GROSS_MASS,  
+ i.saditm_net_mass ,
+ h.UOM_COD1,
+ 	i.saditm_stat_val
